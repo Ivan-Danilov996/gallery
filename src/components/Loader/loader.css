@@ -1,6 +1,6 @@
 .lds-spinner {
     color: official;
-    display: none;
+    display: inline-block;
     position: relative;
     width: 80px;
     height: 80px;
@@ -8,9 +8,7 @@
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-}
-.lds-spinner.active {
-    display: inline-block;
+    z-index: 1000;
 }
 .lds-spinner div {
     transform-origin: 40px 40px;

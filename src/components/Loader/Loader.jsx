@@ -1,8 +1,8 @@
 import React from 'react'
 import './loader.css'
 
-export default function Loader({loading}) {
+export default function Loader() {
     return (
-        <div className={loading? "lds-spinner active" : "lds-spinner"}><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+        <div className="lds-spinner"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
     )
 }

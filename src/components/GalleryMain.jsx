@@ -31,7 +31,7 @@ export default function GalleryMain() {
             <GalleryBtn getCurrentImage={getPrevCurrentImg} disabled={disabledPrevBtn}/>
             {Object.keys(currentImage).length ? <GalleryItem {...currentImage} /> : <div className="gallery__main-item current-img"></div>}
             <GalleryBtn getCurrentImage={getNextCurrentImg} disabled={disabledNextBtn}/>
-            <Loader loading={loading}/>
+            {loading? <Loader/> : null}
         </div>
     )
 }
